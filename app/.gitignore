@@ -1,0 +1,4 @@
+/build
+libs
+build.gradle.kts
+proguard-rules.pro
