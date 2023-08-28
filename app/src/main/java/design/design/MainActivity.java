@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
                 DisplayMetrics displayMetrics = new DisplayMetrics();
                 getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
                 int height = displayMetrics.heightPixels;
-                System.out.println(height);
-                System.out.println(layoutView.getHeight());
                 if (height > layoutView.getHeight())
                     findViewById(R.id.content_button).setVisibility(View.INVISIBLE);
                 else
