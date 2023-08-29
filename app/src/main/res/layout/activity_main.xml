@@ -6,4 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <View
+        android:id="@+id/view1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="#eb3324"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/green_rect"
+        app:layout_constraintStart_toStartOf="@id/view1"
+        app:layout_constraintTop_toTopOf="@+id/view1" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/black_rect"
+        app:layout_constraintEnd_toEndOf="@+id/view1"
+        app:layout_constraintTop_toTopOf="@+id/view1" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/blue_rect"
+        app:layout_constraintBottom_toBottomOf="@+id/view1"
+        app:layout_constraintStart_toStartOf="@+id/view1" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/purple_rect"
+        app:layout_constraintBottom_toBottomOf="@+id/view1"
+        app:layout_constraintEnd_toEndOf="@+id/view1"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view1" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/orange_rect"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
