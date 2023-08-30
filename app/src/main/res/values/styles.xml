@@ -9,6 +9,8 @@
     <style name="icons">
         <item name="android:layout_width">20dp</item>
         <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_marginStart">18dp</item>
     </style>
 
     <style name="circle">
