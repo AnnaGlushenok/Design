@@ -6,13 +6,12 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
-public class ColorView extends LinearLayout {
+public class ColorView extends ConstraintLayout {
     private String[] colors = {"#F44336", "#E91E63", "#7B1FA2", "#5E35B1", "#1E88E5", "#00ACC1", "#00897B", "#43A047", "#C0CA33", "#FFB300"};
     private Button next, prev;
     private TextView colorIndex;
@@ -41,7 +40,7 @@ public class ColorView extends LinearLayout {
 
     private void init(Context context) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View rootView = inflater.inflate(R.layout.color, this);
+        View rootView = inflater.inflate(R.layout.color, this, true);
 
         view = rootView.findViewById(R.id.view);
         prev = rootView.findViewById(R.id.prev_btn);
