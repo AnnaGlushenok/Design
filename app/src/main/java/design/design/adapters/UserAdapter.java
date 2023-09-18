@@ -1,4 +1,4 @@
-package design.design;
+package design.design.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,6 +15,13 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.material.imageview.ShapeableImageView;
 import com.squareup.picasso.Picasso;
+
+import design.design.fragments.CrabFragment;
+import design.design.fragments.FavoritesFragment;
+import design.design.fragments.MusicFragment;
+import design.design.R;
+import design.design.Sex;
+import design.design.User;
 
 public class UserAdapter extends ArrayAdapter<User> {
     private Context context;
@@ -36,7 +43,7 @@ public class UserAdapter extends ArrayAdapter<User> {
         View view = inflater.inflate(R.layout.element1, parent, false);
 
         User user = this.users[position];
-        if (selectedFragment instanceof FavoritesFragment) {
+        if (selectedFragment instanceof FavoritesFragment || selectedFragment instanceof CrabFragment) {
             ((ImageView) view.findViewById(R.id.sex)).setImageResource(user.getSex().equals(Sex.MALE) ? R.drawable.man : R.drawable.woman);
             ((TextView) view.findViewById(R.id.name)).setText(String.format("%s %s", user.getLastName(), user.getFirstName()));
             ((TextView) view.findViewById(R.id.age)).setText(String.valueOf(user.getAge()));
