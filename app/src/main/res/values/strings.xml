@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">design</string>
+    <string name="banana_ship">BANANA ships</string>
+    <string name="bread_ship">BREAD ships</string>
+    <string name="clothes_ship">CLOTHES ships</string>
+    <string name="tunnel">In tunnel:</string>
+    <string name="banana_berth">BANANA berth</string>
+    <string name="bread_berth">BREAD berth</string>
+    <string name="clothes_berth">CLOTHES berth</string>
+    <string name="capacity">capacity</string>
 </resources>
