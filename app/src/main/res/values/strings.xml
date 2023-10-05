@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">design</string>
+    <string name="auto">Авто</string>
+    <string name="speed">Скорость</string>
+    <string name="probability">Вероятность\nпрокола</string>
+    <string name="others">Прочее</string>
+    <string name="distance">S</string>
+    <string name="add">Добавить транспорт</string>
+    <string name="save">Сохранить</string>
+    <string name="car_type">Тип авто:</string>
+    <string name="truck">Грузовик</string>
+    <string name="car">Легковой</string>
+    <string name="moto">Мотоцикл</string>
+    <string name="motorcycle">Коляска</string>
+    <string name="circle_length">Длина круга</string>
+    <string name="newRace">Ещё круг</string>
 </resources>
