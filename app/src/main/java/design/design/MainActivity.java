@@ -78,16 +78,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void save(View view) {
-        // Integer.parseInt(((EditText) findViewById(R.id.circleLength)).getText().toString());
-        transports = new ArrayList<Transport>() {{
-            add(new Moto(50, 2, false));
-            add(new Moto(60, 1, true));
-            add(new Truck(60, 2, 90));
-            add(new Car(20, 3, 4));
-        }};
+//        transports = new ArrayList<Transport>() {{
+//            add(new Moto(50, 2, false));
+//            add(new Moto(60, 1, true));
+//            add(new Truck(60, 2, 90));
+//            add(new Car(45, 3, 4));
+//        }};
         startActivity(new Intent(this, RaceActivity.class)
                 .putExtra("transports", transports)
-                .putExtra("circleLength", 9));
+                .putExtra("circleLength",
+                        Integer.parseInt(
+                                ((EditText) findViewById(R.id.circleLength))
+                                        .getText()
+                                        .toString()
+                        )));
     }
 
     private void clear() {

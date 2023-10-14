@@ -1,7 +1,5 @@
 package design.design.transport;
 
-import java.io.Serializable;
-
 public class Car extends Transport {
     private int countPassengers;
 

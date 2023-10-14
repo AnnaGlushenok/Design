@@ -1,7 +1,5 @@
 package design.design.transport;
 
-import java.io.Serializable;
-
 public class Truck extends Transport {
     private int cargoWeight;
 
